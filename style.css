@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Arya&family=Roboto:wght@300;400;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: #dfd116c6;
+   color: rgb(7, 7, 7);
+    height: 70px;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    font-family: 'Roboto' , sans-serif;
+}
+
+nav ul{
+    list-style-type: none;
+}
+.gameContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.Container{
+    display: grid;
+    grid-template-rows: repeat(3,10vw);
+    grid-template-columns: repeat(3,10vw);
+    font-family:  'Roboto', sans-serif;
+    position: relative;
+     
+} 
+.box{
+    border: 2px solid black;
+    font-size: 7vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.box:hover{
+    background-color: rgba(220, 215, 220, 0.788);
+
+}
+.Info{
+    font-size: 20px;
+}
+
+.gameInfo{
+    padding: 0 50px;
+    font-family: 'Manrope', sans-serif;
+
+}
+.gameInfo h1{
+    padding: 0 34px;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+.imgbox img{
+    width: 0;
+    transition: width 1s ease-in-out;
+
+}
+
+.br-0{
+    border-right: 0;
+}
+
+.bl-0{
+    border-left: 0;
+}
+
+.bt-0{
+    border-top: 0;
+}
+
+.bb-0{
+    border-bottom: 0;
+}
+#reset{
+    margin: 10px 18px;
+    padding: 5px 15px;
+    border-radius: 6px;
+    background-color: aliceblue;
+    cursor: pointer;
+    font-family: 'Baloo Bhaina 2';
+    font-size: 20px;
+    font-weight: bolder;
+
+}
+.line{
+    background-color: black;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    background-color: #911d91;
+    transition: width 1s ease-in-out;
+}
+@media screen and (max-width: 800px){
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+    .gameInfo{
+        margin-top: 34px;
+    }
+
+}
+.gameInfo h1{
+
+    font: 1.5rem;
+
+}
+/* .Container{
+    grid-template-rows: repeat(3, 20vw);
+    grid-template-columns: repeat(3,20vw);
+} */
+
+
